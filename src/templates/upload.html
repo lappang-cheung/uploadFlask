@@ -10,5 +10,9 @@
         <input type="file" name="file" multiple>
         <input type="submit" value="send">
     </form>
+    <form id="upload-forms" action="{{ url_for('uploads')}}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" multiple>
+        <input type="submit" value="send">
+    </form>
 </body>
 </html>
